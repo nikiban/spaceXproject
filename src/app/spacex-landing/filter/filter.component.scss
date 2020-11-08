@@ -1,0 +1,50 @@
+.filter-wrapper {
+	background: white;
+	border-radius: 6px;
+	padding: 20px;
+	.main-header {
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	.sub-header {
+		font-size: 1em;
+		max-width: max-content;
+		text-align: center;
+		border-bottom: 1px solid grey;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.year-list-wrapper {
+		display: flex;
+		justify-content: space-between;
+		max-width: 190px;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		.list-item {
+			margin-bottom: 10px;
+			min-width: 65px;
+			background: #C5E09B;
+			border-radius: 6px;
+			text-align: center;
+			cursor: pointer;
+			font-size: 0.9em;
+			border: 1px solid transparent;
+			&.active {
+				background-color: #7CBA01;
+			}
+			&:hover {
+				border: 1px solid  #7CBA01;
+			}
+		}
+	}
+}
+
+@media (min-width: 700px) {
+	.filter-wrapper {
+		padding: 10px !important;
+		.main-header {
+			font-size: 1.2em;
+		}
+	}
+}

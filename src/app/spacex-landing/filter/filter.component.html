@@ -1,0 +1,28 @@
+<div class="filter-wrapper">
+  <div class="main-header">Filters</div>
+  <div class="conatiner mt-2">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-header">Launch Year</div>
+        <div class="year-list-wrapper mt-3">
+          <div *ngFor="let yr of filterInput.year.list"
+            [ngClass]="{'active': yr == filterInput.year.active, 'list-item': true }" (click)="applyFilter('year', yr)">{{yr}}</div>
+        </div>
+      </div>
+      <div class="col-12 mt-3">
+        <div class="sub-header">Successful Launch</div>
+        <div class="year-list-wrapper mt-3">
+          <div *ngFor="let status of filterInput.islaunch.list"
+            [ngClass]="{'active': status == filterInput.islaunch.active, 'list-item': true }" (click)="applyFilter('islaunch', status)">{{status | titlecase }}</div>
+        </div>
+      </div>
+      <div class="col-12 mt-3">
+        <div class="sub-header">Successful Landing</div>
+        <div class="year-list-wrapper mt-3">
+          <div *ngFor="let status of filterInput.islanding.list"
+            [ngClass]="{'active': status == filterInput.islanding.active, 'list-item': true }" (click)="applyFilter('islanding', status)">{{status | titlecase }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

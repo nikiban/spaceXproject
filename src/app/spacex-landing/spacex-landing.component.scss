@@ -1,0 +1,39 @@
+.spacex-landing-wrapper {
+	.main-header {
+		font-size: 1.25em;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.space-dashboard {
+		display: flex;
+		flex-direction: column;
+		.dashboard-filter-wrapper,
+		.dashboard-content-wrapper {
+			position: relative;
+			width: 100%;
+		}
+		.dashboard-filter-wrapper {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+@media (min-width: 700px) {
+	.main-header {
+		font-size: 1.5em !important;
+	}
+	.space-dashboard {
+		display: flex;
+		flex-direction: row !important;
+		.dashboard-filter-wrapper {
+			flex: 0 0 24% !important;
+			max-width: 24% !important;
+			margin-right: 2%;
+			margin-bottom: 0 !important;
+		}
+		.dashboard-content-wrapper {
+			flex: 0 0 74% !important;
+			max-width: 74% !important;
+		}
+	}
+}

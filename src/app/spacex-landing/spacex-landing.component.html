@@ -1,0 +1,15 @@
+<div class="container-fluid spacex-landing-wrapper py-3">
+  <div class="row">
+    <div class="col-12 main-header" (click)="redirectToLanding()">SpaceX Launch Programs</div>
+    <div class="col-12 mt-2">
+      <div class="space-dashboard">
+        <div class="dashboard-filter-wrapper">
+          <app-filter [filterInput]="spaceData.filterData"></app-filter>
+        </div>
+        <div class="dashboard-content-wrapper">
+          <app-content [contentInput]="spaceData.contentData"></app-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
