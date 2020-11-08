@@ -1,30 +1,22 @@
 # SpaceXproject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+## Problem statement
+
+To develop a front-end application which would help users list and browse all launches by SpaceX program.
+
+## Features
+
+This is a single page, mobile first, responsive application, created using Angular. The url of this page is `http://localhost:4200/spaceXLanding`.
+After we apply filter the url changes without reloading the page. In order to clear all the filter, click the main header of the page or we can also change using the url.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve` for a dev server. 
+Then Navigate to `http://localhost:4200/spaceXLanding`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Performace of the page
 
